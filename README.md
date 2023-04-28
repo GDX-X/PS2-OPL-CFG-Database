@@ -4,40 +4,9 @@
 Originally based on [Tom-Bruise PS2-OPL-CFG-Database repository](https://github.com/Tom-Bruise/PS2-OPL-CFG-Database)\
 NOTE: Statistics are not up to date
 
-I added more game info
+I added\ 
+Game infos from psxdatacenter more
 and remove fake IDs
-
-## Goal
-This is a collection of CFG files for use with [Open PS2 Loader](https://github.com/ifcaro/open-ps2-loader). 
-
-
-Originally based on [Veritas83's CFG repository](https://github.com/Veritas83/PS2-OPL-CFG), this database 
-has been enriched with game information from [ScreenScraper.fr](https://www.screenscraper.fr), using a rather hacky script that can be found in the **_scripts_** folder of this repository.
-
-The original CFG files already contained game titles and, in some cases, additional OPL configuration flags. The goal of this project was to mass-edit these files in an automated way, by adding the following info:
-
-* Game Description
-* Number Of Players
-* Genre
-* Release Date
-* Developer
-* Rating
-
-Here are some stats:
-
-```
-Total CFG files          =  13620
-CFGs with Descriptions   =  6290
-CFGs with Players info   =  5374
-CFGs with Genre info     =  6235
-CFGs with Release date   =  6405
-CFGs with Developer info =  6235
-CFGs with Ratings        =  5289
-```
-
-You can find a list of games that could not be scraped in the *stats* folder.
-
-This collection of CFG files can be easily imported in [OPL Manager](https://oplmanager.com/site/), so every time you add a new game there is a good chance you have information already available for it.
 
 ## Notes About Game Descriptions
 

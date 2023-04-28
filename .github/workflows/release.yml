@@ -43,7 +43,7 @@ jobs:
 
 
     - name: Deploy pre-release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v3
       if: (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
       with:
         token: "${{ secrets.GITHUB_TOKEN }}"

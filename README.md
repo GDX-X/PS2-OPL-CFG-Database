@@ -1,7 +1,7 @@
 # The Open PS2 Loader CFG Database Project 
 ## Edit 26/04/2023 
 
-Originally based on [Tom-Bruise PS2-OPL-CFG-Database repository](https://github.com/Veritas83/PS2-OPL-CFG)\
+Originally based on [Tom-Bruise PS2-OPL-CFG-Database repository](https://github.com/Tom-Bruise/PS2-OPL-CFG-Database)\
 NOTE: Statistics are not up to date
 
 I added more game info

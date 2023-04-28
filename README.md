@@ -4,9 +4,9 @@
 Originally based on [Tom-Bruise PS2-OPL-CFG-Database repository](https://github.com/Tom-Bruise/PS2-OPL-CFG-Database)\
 NOTE: Statistics are not up to date
 
-I added\ 
-Game infos from psxdatacenter more
-and remove fake IDs
+Change\ 
+ - Game infos from psxdatacenter.com\
+ - Remove fake IDs
 
 ## Notes About Game Descriptions
 

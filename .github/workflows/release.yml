@@ -1,4 +1,4 @@
-name: Release PS2-OPL-CFG-Database
+name: Release  PS2-OPL-CFG-Database
 on:
   workflow_dispatch:
   repository_dispatch:
@@ -10,7 +10,7 @@ jobs:
     steps:
 
     - name: checkout code for release
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
       
     - name: Get short SHA
       id: slug
@@ -22,26 +22,25 @@ jobs:
         DATEE=`date '+[%Y-%m-%d]'`
         echo "----PS2-OPL-CFG-Database----">hash.txt
         echo Commit $SCH>>hash.txt
-        7z a -t7z -r PS2-OPL-CFG-Database.7z *
+        7z a -t7z -r PFS-BatchKit-Manager.7z *
     
     - name: Upload artifacts
       if: ${{ success() }}
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v2
       with:
         name: PS2-OPL-CFG-Database-${{ steps.slug.outputs.sha8 }}
         path: |
              PS2-OPL-CFG-Database.7z
-             
+    
     - name: delete previous tag/release
       if: (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
-      uses: dev-drprasad/delete-tag-and-release@v0.2.1
+      uses: dev-drprasad/delete-tag-and-release@v0.2.0
       with:
-        
+        delete_release: true
         tag_name: Latest
       env:
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-       delete_release: true
-        
+
     - name: Deploy pre-release
       uses: softprops/action-gh-release@v1
       if: (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
@@ -49,9 +48,8 @@ jobs:
         token: "${{ secrets.GITHUB_TOKEN }}"
         fail_on_unmatched_files: true
         files: |
-             PS2-OPL-CFG-Database.7z
+             PFS-BatchKit-Manager.7z
         name: "Latest PS2-OPL-CFG-Database"
         tag_name: "Latest"
-#        body_path: 'latest_changes.log'  # DM me about the changelog system, i can help you to re-adapt the one i'm using for HDLBinst
         prerelease: true
     

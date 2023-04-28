@@ -4,7 +4,8 @@
 I added more game info
 and remove fake IDs
 
-NOTE: Stats are not up to date
+Originally based on https://github.com/Tom-Bruise/PS2-OPL-CFG-Database
+NOTE: Stats are up to date
 
 
 ## Goal

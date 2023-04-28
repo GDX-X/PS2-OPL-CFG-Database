@@ -1,15 +1,15 @@
 # The Open PS2 Loader CFG Database Project 
 ## Edit 26/04/2023 
 
+Originally based on [Tom-Bruise PS2-OPL-CFG-Database repository](https://github.com/Veritas83/PS2-OPL-CFG)\
+NOTE: Statistics are not up to date
+
 I added more game info
 and remove fake IDs
 
-Originally based on https://github.com/Tom-Bruise/PS2-OPL-CFG-Database
-NOTE: Stats are up to date
-
-
 ## Goal
 This is a collection of CFG files for use with [Open PS2 Loader](https://github.com/ifcaro/open-ps2-loader). 
+
 
 Originally based on [Veritas83's CFG repository](https://github.com/Veritas83/PS2-OPL-CFG), this database 
 has been enriched with game information from [ScreenScraper.fr](https://www.screenscraper.fr), using a rather hacky script that can be found in the **_scripts_** folder of this repository.

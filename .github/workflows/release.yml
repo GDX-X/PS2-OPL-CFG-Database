@@ -36,10 +36,11 @@ jobs:
       if: (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
       uses: dev-drprasad/delete-tag-and-release@v0.2.1
       with:
-        delete_release: true
+        
         tag_name: Latest
       env:
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+       delete_release: true
         
     - name: Deploy pre-release
       uses: softprops/action-gh-release@v1

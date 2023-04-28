@@ -22,7 +22,7 @@ jobs:
         DATEE=`date '+[%Y-%m-%d]'`
         echo "----PS2-OPL-CFG-Database----">hash.txt
         echo Commit $SCH>>hash.txt
-        7z a -t7z -r PFS-BatchKit-Manager.7z *
+        7z a -t7z -r PS2-OPL-CFG-Database.7z *
     
     - name: Upload artifacts
       if: ${{ success() }}
@@ -48,7 +48,7 @@ jobs:
         token: "${{ secrets.GITHUB_TOKEN }}"
         fail_on_unmatched_files: true
         files: |
-             PFS-BatchKit-Manager.7z
+             PS2-OPL-CFG-Database.7z
         name: "Latest PS2-OPL-CFG-Database"
         tag_name: "Latest"
         prerelease: true

@@ -34,7 +34,7 @@ jobs:
              
     - name: delete previous tag/release
       if: (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
-      uses: dev-drprasad/delete-tag-and-release@Latest
+      uses: dev-drprasad/delete-tag-and-release@1.0.0
       with:
         delete_release: true
         tag_name: Latest
